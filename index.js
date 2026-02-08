@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT;
 const MONGO_URI = process.env.MONGO_URI;
 app.use(express.json())
-
+app.use(express.urlencoded({ extends: true }))
 const Product = require("./models/product.model")
 
 app.get("/", (req, res) => {
