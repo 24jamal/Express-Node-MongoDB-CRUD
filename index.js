@@ -4,11 +4,17 @@ require("dotenv").config();
 const app = express();
 const PORT = process.env.PORT;
 const MONGO_URI = process.env.MONGO_URI;
-
+app.use(express.json())
 
 app.get("/", (req, res) => {
 
     res.send("Hello from Express API");
+})
+
+app.post("/api/products", (req, res) => {
+
+    console.log(req.body)
+    res.send(req.body)
 })
 
 mongoose.connect(MONGO_URI)

@@ -1,3 +1,21 @@
+Important imports::
+
+const express = require("express");
+
+const app = express()
+
+const router = app.Router();
+
+const mongoose = require("mongoose")
+
+require("dotenv").config();
+
+const PORT = process.env.PORT;
+
+app.use(express.json()) // needed for json parsing from req body (because node initailly blocks the express from getting the body)
+--------------------------------------
+npm commands::
+
 npm init -y -> To intialize the 
 
 npm i express
