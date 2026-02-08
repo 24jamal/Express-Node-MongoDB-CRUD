@@ -1,4 +1,4 @@
-npm init -y
+npm init -y -> To intialize the 
 
 npm i express
 
@@ -15,3 +15,6 @@ npm run test
 npm run serve
 npm run dev
 
+npm i mongoose
+
+npm install mongodb
